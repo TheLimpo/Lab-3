@@ -5,7 +5,7 @@ using namespace std;
 int string_length(char* ptr)
 {
 	int count = 0;
-	for (int i = 0; i = *ptr != '\0'; ptr++)
+	for (int i = 0; i = (*ptr != '\0'); ptr++)
 	{
 		count++;
 	}
