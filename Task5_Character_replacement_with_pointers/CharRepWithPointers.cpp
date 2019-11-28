@@ -8,7 +8,7 @@ void replace_chars(char* str, char out, char in)
 	//This solution feels like it can be 100 times better
 	for (int i = 0; i = (*str != '\0'); str++)
 	{
-		if (*str == out)
+		if (*str == out) //This is needed to change the first character in the string
 		{
 			*str = in;
 		}
