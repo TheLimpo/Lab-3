@@ -61,6 +61,7 @@ bool search(const vector<string>* database)
 {
 	bool t = 0;
 	string str;
+
 	cout << "What name do you want to search?: ";
 	cin >> str;
 	int len = str.length();
@@ -76,16 +77,6 @@ bool search(const vector<string>* database)
 	cout << endl;
 	return t;
 
-	/*
-	//the other for I haven't solved how to syntax
-	for (int i = 0; i < database->size(); i++)
-	{
-		if (str == *((database + i)->substr(0, len)))
-		{
-			cout << (database + i) << endl;
-		}
-	}
-	*/
 }
 
 
@@ -98,6 +89,7 @@ bool name_delete(vector<string>* database)
 {
 	bool t = 0;
 	string str;
+
 	cout << "What name do you want to delete?: ";
 	cin >> str;
 	cout << endl;
@@ -118,18 +110,6 @@ bool name_delete(vector<string>* database)
 	cout << endl;
 	return t;
 
-
-	//the other for I haven't solved how to syntax
-	/*for (int i = 0; i < database->size(); database++)
-	{
-		if (*(database + i) == str)
-		{
-			database->erase(database->begin() + i);
-			break;
-		}
-
-	}
-	*/
 }
 
 
@@ -150,14 +130,6 @@ bool print(const vector<string>* database)
 	cout << endl;
 	return t;
 
-
-	/*//the other for I haven't solved how to syntax
-
-for (int i = 0; i < database->size(); i++)
-	{
-		cout << *(database + i) << endl;
-
-}*/
 }
 
 
@@ -183,8 +155,6 @@ void save(const vector<string>* database)
 	outfile.close();
 	cout << "File saved" << endl << endl;
 	
-	
-
 }
 
 
@@ -207,7 +177,7 @@ bool load(vector<string>* database)
 		cin >> in;
 		infile.open(in);
 
-		if (!infile) //check if file exists
+		if (!infile) //check if file does not exists
 		{
 			infile.close();
 			cout << endl;
@@ -236,7 +206,6 @@ bool load(vector<string>* database)
 		cout << endl;
 		return true;
 	}
-
 
 }
 
@@ -287,8 +256,6 @@ void menu_vector_database()
 				cout << "No names found" << endl;
 				cout << endl;
 			}
-
-			
 			break;
 		}
 
@@ -300,8 +267,6 @@ void menu_vector_database()
 				cout << "No name deleted" << endl;
 				cout << endl;
 			}
-
-			
 			break;
 		}
 
@@ -313,21 +278,18 @@ void menu_vector_database()
 				cout << "No names found" << endl;
 				cout << endl;
 			}
-			
 			break;
 		}
 
 		case '6': //save vector to file
 		{
 			save(database);
-
 			break;
 		}
 
 		case '7': //load names to vector
 		{
 			load(database);
-
 			break;
 		}
 
@@ -344,7 +306,6 @@ void menu_vector_database()
 	}
 
 exit_loop:;
-
 
 }
 

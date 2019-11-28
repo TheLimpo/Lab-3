@@ -1,0 +1,15 @@
+1.This lab felt like it went really well for me. I feel I am starting to think programing more now than before.
+
+2.The most difficult for me was in the task6 when I had to modify the code from using index to pointers. 
+There were some places in the for loops that I got to some error messages 
+regarding the cout << syntax when using pointers. It said that << had no operand or something like that.
+I googled around and the solution I found was that I was supposed to overload the cout function or something.
+I don't think we have talked about overloading except on functions so I tried instead to do something else and
+ended up getting the C++11 for(auto:)loop to work instead. I used that on everything except the load function
+were I couldn't figure out how to syntax it. I used a while instead there. Other than that I feel like it went well.
+(Unless I totally missunderstood pointers or something, but the code works.)
+
+
+3. This lab was easier to understand the assignments than lab 2. So that was good. :)
+
+4. I think the time it took for me to complete this was around 10 hours.
